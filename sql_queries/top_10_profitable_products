@@ -1,0 +1,7 @@
+SELECT
+  product_name,
+  ROUND(SUM(profit),2) AS total_profit
+FROM `mlops-lab-477200.superstore_dw.orders_clean`
+GROUP BY product_name
+ORDER BY total_profit DESC
+LIMIT 10;

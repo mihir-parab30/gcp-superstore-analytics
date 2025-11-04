@@ -1,0 +1,4 @@
+SELECT Region, ROUND(SUM(Sales),2) AS total_sales
+FROM `mlops-lab-477200.superstore_dw.orders_raw`
+GROUP BY Region
+ORDER BY total_sales DESC;

@@ -1,0 +1,4 @@
+SELECT Category, ROUND(AVG(Profit),2) AS avg_profit
+FROM `mlops-lab-477200.superstore_dw.orders_raw`
+GROUP BY Category
+ORDER BY avg_profit DESC;
