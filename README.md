@@ -35,16 +35,16 @@ queries stored inside `/sql_queries/`
 ## Screenshots
 
 ### GCS Bucket – Raw CSV Uploaded
-![GCS Bucket](./assets/gcs_bucket.jpg)
+![GCS Bucket](./assets/gcs_bucket.png)
 
 ### BigQuery – Tables Created
-![BigQuery Tables](./assets/bigquery_tables.jpg)
+![BigQuery Tables](./assets/bigquery_tables.png)
 
 ### Sales by Region
-![Sales Region](./assets/total_sales_by_region.jpg)
+![Sales Region](./assets/total_sales_by_region.png)
 
 ### Final Looker Studio Visualization
-![Looker Viz](./assets/looker_studio_viz.jpg)
+![Looker Viz](./assets/looker_studio_viz.png)
 
 ---
 
