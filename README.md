@@ -1,59 +1,53 @@
-GCP Superstore Analytics
+# GCP Superstore Analytics
 
-Built an end-to-end retail analytics pipeline on Google Cloud: data in GCS → BigQuery SQL → Looker Studio insights.
-Tech used: GCS, BigQuery, SQL, Looker Studio.
+This MLOps Lab shows a clean retail analytics workflow on Google Cloud:  
+CSV → GCS Bucket → BigQuery SQL → Looker Studio dashboards.
 
-Steps
-Step 1 – Storage (GCS)
+Tech used: **GCS, BigQuery, SQL, Looker Studio**
 
-Uploaded Superstore Orders dataset to a Google Cloud Storage bucket.
+---
 
-Step 2 – Warehouse (BigQuery)
+## Architecture
 
-Loaded the CSV from GCS into BigQuery (orders_raw) and created a cleaned table (orders_clean) with proper date fields + cleaned columns.
+| Step | Tool | Action |
+|------|------|--------|
+| 1 | GCS | Uploaded Superstore Orders CSV file |
+| 2 | BigQuery | Loaded raw → cleaned table + ran aggregations |
+| 3 | Looker Studio | Built business insights dashboards |
 
-Step 3 – SQL Analytics (BigQuery)
+---
 
-Executed intermediate analytical queries:
+## Key Insights Generated
 
-Total Sales by Region
+- Total Sales by Region
+- Average Profit by Category
+- Top 10 Most Profitable Products
+- KPI boxes → Total Sales / Total Profit / Total Orders
 
-Average Profit by Category
+---
 
-Top 10 Most Profitable Products
+## SQL Queries
 
-Step 4 – Visualization (Looker Studio)
+queries stored inside `/sql_queries/`
 
-Built charts + KPI scorecards based on orders_clean:
+---
 
-Total Sales
+## Screenshots
 
-Total Profit
+### GCS Bucket – Raw CSV Uploaded
+![GCS Bucket](./assets/gcs_bucket.jpg)
 
-Total Orders
+### BigQuery – Tables Created
+![BigQuery Tables](./assets/bigquery_tables.jpg)
 
-Avg Discount
+### Sales by Region
+![Sales Region](./assets/total_sales_by_region.jpg)
 
-Bar chart: Sales by Region
+### Final Looker Studio Visualization
+![Looker Viz](./assets/looker_studio_viz.jpg)
 
-Bar chart: Avg Profit by Category
+---
 
-Horizontal Bar: Top 10 Profitable Products
+## Result
 
-Repo Structure
-gcp-superstore-analytics/
-│
-├─ README.md
-├─ queries/
-│   ├─ total_sales_by_region.sql
-│   ├─ avg_profit_by_category.sql
-│   └─ top10_products_profit.sql
-└─ screenshots/
-    ├─ kpis.png
-    ├─ sales_by_region_chart.png
-    ├─ avg_profit_by_category_chart.png
-    └─ top10_products_chart.png
-
-Result
-
-Simple project showing how to go from raw CSV → cloud data warehouse → SQL → visual business insights.
+This project shows end-to-end analytical skills using Google Cloud — from ingestion → warehouse → business dashboards.
