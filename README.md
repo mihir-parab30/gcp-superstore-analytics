@@ -1,3 +1,14 @@
+# ⚠️ This repository has been archived
+
+**New Location:** This project is now part of my consolidated [MLOps Portfolio](https://github.com/mihir-parab30/MLOps-Portfolio)
+
+👉 **View this project:** [MLOps-Portfolio/03-gcp-analytics/superstore](https://github.com/mihir-parab30/MLOps-Portfolio/tree/main/03-gcp-analytics/superstore)
+
+All future updates will be made in the portfolio repository.
+
+---
+
+
 # GCP Superstore Analytics
 
 This MLOps Lab shows a clean retail analytics workflow on Google Cloud:  
